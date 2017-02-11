@@ -1,0 +1,5 @@
+#GULP
+npm install --save-dev gulp gulp-autoprefixer gulp-clean-css gulp-rigger gulp-sass gulp-sourcemaps gulp-uglify gulp-watch gulp-clean gulp-html-replace
+
+#Bower
+bower install --save-dev jquery#2.2.4 bootstrap

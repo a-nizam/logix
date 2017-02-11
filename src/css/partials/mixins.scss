@@ -1,0 +1,26 @@
+@mixin respond-to($media) {
+  @if $media == narrow-handhelds {
+    @media only screen and (max-width: 320px) { @content; }
+  }
+  @if $media == handhelds {
+    @media only screen and (min-width: 321px) and (max-width: 480px) { @content; }
+  }
+  @else if $media == wide-handhelds {
+    @media only screen and (min-width: 481px) and (max-width: 767px) { @content; }
+  }
+  @else if $media == all-handhelds {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $media == not-handhelds {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+  @else if $media == small-desktops {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) { @content; }
+  }
+  @else if $media == full-hd {
+    @media only screen and (min-width: 1920px) { @content; }
+  }
+}
